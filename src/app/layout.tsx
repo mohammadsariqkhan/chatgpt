@@ -1,16 +1,10 @@
 import './globals.css'
-
 import {getServerSession} from "next-auth";
-
 import SideBar from "@/components/SideBar";
 import React from "react";
 import Login from "@/components/Login";
 import {authOptions} from "@/lib/auth";
 import {NextProvider} from "@/components/SessionProvider";
-import {log} from "util";
-import {useSession} from "next-auth/react";
-
-
 export default async function RootLayout({
                                              children,
                                          }: {
@@ -33,7 +27,6 @@ export default async function RootLayout({
                         <SideBar/>
                     </div>
                     <div className="bg-[#343541] flex-1">
-
                         {children}
                     </div>
                 </div>
