@@ -8,7 +8,6 @@ const ChatPage = () => {
     const session = useSession()
     return (
     <div>
-        hello
     </div>
     );
 };

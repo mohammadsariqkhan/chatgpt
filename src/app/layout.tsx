@@ -23,7 +23,7 @@ export default async function RootLayout({
                 <div className="flex bg-[#343541]">
                     {/*sidebar*/}
                     <div
-                        className="bg-[#202123] text-white max-w-xs h-screen overflow-auto md:min-w-[20rem] hidden md:block">
+                        className="bg-[#202123] text-white max-w-xs h-screen overflow-auto md:min-w-[20rem]">
                         <SideBar/>
                     </div>
                     <div className="bg-[#343541] flex-1">
