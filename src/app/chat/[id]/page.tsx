@@ -1,14 +1,24 @@
 'use client'
 import React from 'react';
-import SideBar from "@/components/SideBar";
-import Hero from "@/components/Hero";
 import {useSession} from "next-auth/react";
+import Chat from "@/components/Chat";
+import ChatInput from "@/components/ChatInput";
+type Props = {
+    params:{
+        id:string
+    }
+}
+const ChatPage = ({params:{id}}: Props) => {
 
-const ChatPage = () => {
-    const session = useSession()
+    // const session = useSession()
     return (
-    <div>
-    </div>
+        <div className="flex flex-col h-screen overflow-hidden">
+            <Chat chatId={id}/>
+            {/*    chat*/}
+            {/*    chatinput*/}
+            <ChatInput chatId={id}/>
+
+        </div>
     );
 };
 

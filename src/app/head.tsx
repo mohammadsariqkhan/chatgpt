@@ -1,7 +1,7 @@
 export default function head(){
     return(
         <>
-            <title>Chatgpt Clone</title>
+            <title>Chatgpt</title>
             <meta/>
             <link rel='icon' href='/icon?<generated>' type="image/<generated>" sizes="<generated>"/>
         </>
