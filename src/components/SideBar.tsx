@@ -24,11 +24,11 @@ function SideBar() {
                 <div>
                     {/*    newChat*/}
                     <NewChat/>
-                    <div className="hidden sm:inline">
-                        <ModelSelection/>
+                    {/*<div className="hidden sm:inline">*/}
+                    {/*    <ModelSelection/>*/}
 
-                        {/*    NewChat*/}
-                    </div>
+                    {/*    /!*    NewChat*!/*/}
+                    {/*</div>*/}
                     <div className="flex flex-col space-y-2 my-2">
                         {loading && (
                             <div className="animate-pulse text-center text-white">
