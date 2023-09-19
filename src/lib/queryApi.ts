@@ -20,10 +20,7 @@ const query = async (prompt: string, chatId: string, model: string) => {
             max_tokens:1000,
             frequency_penalty:0
         })
-        console.log(`the completion is ${completion}`)
         const rep = completion.choices[0].text
-        console.log(rep)
-        console.log("h6")
         return  rep
     } catch (err) {
         console.log(err)
